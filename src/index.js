@@ -1,8 +1,5 @@
-// import one from "./modules/one.js";
+import timer from "./modules/timer";
 // import two from "./modules/two.js";
 
-// one()
+timer('29 december 2024')
 // two()
-// let date = new Date()
-// console.log(date.getDate())
-// console.log(date.getDay())
