@@ -4,7 +4,7 @@
   "main": "script.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "watch": "webpack serve --watch --mode=production --open",
+    "watch": "webpack --watch --mode=production --open",
     "start": "webpack serve --mode=production --open"
   },
   "author": "Sunnat Khudoykulov",
