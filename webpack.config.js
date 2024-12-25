@@ -17,9 +17,21 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.css$/, // Для работы с CSS
-				use: ['style-loader', 'css-loader'],
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader']
 			},
-		],
+			{
+				test: /\.(png|jpg|gif|svg)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[hash].[ext]',
+							outputPath: 'images/',
+						},
+					},
+				],
+			},
+		]
 	},
 };
