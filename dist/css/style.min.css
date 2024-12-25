@@ -187,7 +187,7 @@ body button:hover {
 main {
 	padding-top: 1rem;
 	padding-bottom: 2.6rem;
-	background: url(./../../src/assets/images/main-bg.jpg) center/cover no-repeat fixed;
+	background: url(../../src/assets/images/main-bg.jpg) center/cover no-repeat fixed;
 	color: #fff
 }
 
@@ -414,13 +414,13 @@ main a {
 
 .portfolio-btn.prev {
 	left: 20px;
-	background-image: url(../src/assets/images/icons/left-arrow.svg);
+	background-image: url(../../src/assets/images/icons/left-arrow.svg);
 	background-position: 25% 50%
 }
 
 .portfolio-btn.next {
 	right: 20px;
-	background-image: url(../src/assets/images/icons/right-arrow.svg);
+	background-image: url(../../src/assets/images/icons/right-arrow.svg);
 	background-position: 75% 50%
 }
 
@@ -632,7 +632,7 @@ main a {
 .connect {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background-image: url(../src/assets/images/connect/connect-bg.jpg);
+	background-image: url(../../src/assets/images/connect/connect-bg.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	color: #fff
