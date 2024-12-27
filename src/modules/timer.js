@@ -76,7 +76,7 @@ const timer = (deadline) => {
 
 			getTime.timeRemaining <= 0 ? clearInterval(SetTimer) : null;
 
-			console.log(getTime);
+			// console.log(getTime);
 		}
 	}
 	updateClock();

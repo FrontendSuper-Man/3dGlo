@@ -1,5 +1,7 @@
 import timer from "./modules/timer";
-// import two from "./modules/two.js";
+import menu from "./modules/menu.js";
+import modal from './modules/modal.js'
 
 timer('29 december 2024')
-// two()
+menu()
+modal()
