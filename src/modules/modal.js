@@ -14,6 +14,7 @@ const modal = () => {
 			modal.style.display = 'none';
 		}
 	};
+	closeBtnPop.addEventListener('click', closeModal);
 
 	const openModal = () => {
 		modal.style.display = 'block';
@@ -29,7 +30,6 @@ const modal = () => {
 		}
 	};
 
-	closeBtnPop.addEventListener('click', closeModal);
 	buttons.forEach(btn => {
 		btn.addEventListener('click', openModal);
 	});

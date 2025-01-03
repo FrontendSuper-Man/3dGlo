@@ -31,7 +31,6 @@ const timer = (deadline) => {
 		let minutes = Math.floor((timeRemaining / 60) % 60)
 		let seconds = Math.floor(timeRemaining % 60)
 
-
 		days > 4 ? dayWord = ' Дней :' : (days === 1 ? dayWord = ' День :' : (days === 0 ? dayWord = '' : dayWord = ' Дня :'));
 		hours > 4 ? hourWord = ' Часа :' : (hours === 1 ? hourWord = ' Час :' : (hours === 0 ? hourWord = '' : hourWord = ' Часов :'));
 		minutes > 4 ? minuteWord = ' Минут :' : (minutes === 1 ? minuteWord = ' Минута :' : (minutes === 0 ? minuteWord = '' : minuteWord = ' Минуты :'));
@@ -39,7 +38,6 @@ const timer = (deadline) => {
 
 		return { timeRemaining, days, hours, minutes, seconds, }
 	}
-
 
 	const updateClock = () => {
 		getTime = getTimerRemaining()
