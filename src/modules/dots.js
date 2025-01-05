@@ -8,5 +8,6 @@ const dots = () => {
 		i === 0 ? elemDotLi.classList.add('dot-active') : null;
 		portfolioDots.append(elemDotLi)
 	}
-
 }
+
+export default dots

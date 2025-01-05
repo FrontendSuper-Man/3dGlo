@@ -8,9 +8,9 @@ import portfolio from './modules/portfolio';
 
 
 dots()
-timer('29 december 2024')
+timer('10 january 2025')
 menu()
 modal()
-calc()
+calc(100)
 tabs()
 portfolio()
