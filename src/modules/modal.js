@@ -11,7 +11,7 @@ const modal = () => {
 			animate({
 				duration: 20,
 				timing(timeFraction) {
-					return timeFraction; // Прямая анимация
+					return timeFraction;
 				},
 				draw(progress) {
 					modal.style.transform = `scale(${progress})`;
