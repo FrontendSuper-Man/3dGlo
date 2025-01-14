@@ -6,17 +6,19 @@ import calc from './modules/calc';
 import tabs from './modules/tabs';
 import portfolio from './modules/portfolio';
 import sendForm from './modules/sendForm';
+import regExp from './modules/regExp';
+import connect from './modules/connect';
 
 
 dots()
-timer('10 january 2025')
+timer('30 january 2025')
 menu()
-modal()
+regExp()
 calc(100)
 tabs()
 portfolio()
 sendForm({
-	formId: 'form123',
+	formId: 'form1',
 	someElem: [
 		{
 			type: 'block',
@@ -24,3 +26,5 @@ sendForm({
 		}
 	],
 })
+modal()
+connect()

@@ -1,6 +1,12 @@
+import modal from "./modal"
+import validateForms from "./validForm"
+
+
 const sendForm = ({ formId, someElem = [] }) => {
+	validateForms()
 	const form = document.getElementById(formId)
 	const statusBlock = document.createElement('div')
+	statusBlock.classList.add('add-div')
 	const loadText = 'Загрузка...'
 	const errorText = 'Произошла ошибка...'
 	const successText = 'Спасибо! наш менеджер с вами свяжется'
@@ -45,6 +51,10 @@ const sendForm = ({ formId, someElem = [] }) => {
 					formElements.forEach(input => {
 						input.value = ''
 					})
+					setTimeout(() => {
+						statusBlock.textContent = ''
+					}, 3000);
+					modal()
 				})
 				.catch(error => statusBlock.textContent = errorText)
 		} else {
@@ -53,10 +63,7 @@ const sendForm = ({ formId, someElem = [] }) => {
 	}
 
 	try {
-		if (!form) {
-			throw new Error("Верните форму на место")
-		}
-
+		if (!form) { throw new Error("Верните форму на место") }
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
 			submitForm()
@@ -64,5 +71,8 @@ const sendForm = ({ formId, someElem = [] }) => {
 	} catch (error) {
 		console.log(error.message);
 	}
+	statusBlock.style.color = 'white'
+	return sendData()
 }
-export default sendForm
+
+export default sendForm 

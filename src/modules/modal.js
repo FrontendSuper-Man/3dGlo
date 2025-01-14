@@ -1,8 +1,10 @@
 import { animate } from './helpers';
+import sendForm from './sendForm';
 
 const modal = () => {
 	const buttons = document.querySelectorAll('.popup-btn');
 	const modal = document.querySelector('.popup');
+	const form3 = document.querySelector('#form3')
 	const closeBtnPop = modal.querySelector('.popup-close');
 
 	const openModal = () => {
@@ -47,6 +49,9 @@ const modal = () => {
 	closeBtnPop.addEventListener('click', closeModal)
 	buttons.forEach(btn => { btn.addEventListener('click', openModal) });
 	modal.addEventListener('click', (event) => { event.target === modal ? closeModal() : null });
+
+	sendForm({ formId: 'form3' })
+	form3.querySelector('div.add-div') ? setTimeout(() => { closeModal() }, 1000) : null;
 };
 
 export default modal;
