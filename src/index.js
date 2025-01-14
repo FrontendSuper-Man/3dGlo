@@ -5,6 +5,7 @@ import modal from './modules/modal';
 import calc from './modules/calc';
 import tabs from './modules/tabs';
 import portfolio from './modules/portfolio';
+import sendForm from './modules/sendForm';
 
 
 dots()
@@ -14,3 +15,12 @@ modal()
 calc(100)
 tabs()
 portfolio()
+sendForm({
+	formId: 'form123',
+	someElem: [
+		{
+			type: 'block',
+			id: "total"
+		}
+	],
+})
